@@ -1,2 +1,1 @@
-#####
-BAD URL
+https://www.udemy.com/course/handsonml/?couponCode=LEARNANEWSKILL&fbclid=IwAR3y0mz_se1f1bzdQw6lNyhHhdnph3ptHeqDGLHKEOlEgtE7VeeK0LakFhg
