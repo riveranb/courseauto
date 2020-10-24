@@ -1,7 +1,6 @@
 import webbrowser
 import time
-import ctypes  # An included library with Python install
-import pyautogui   
+import ctypes  # An included library with Python install  
 
 # register Google Chrome browser (for Windows)
 chrome_path="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
