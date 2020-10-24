@@ -17,6 +17,7 @@ urlfile = sys.argv[1]
 # register Google Chrome browser (for Windows)
 chrome_path='C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
 webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+# register FireFox browser (for Windows)
 firefox_path = 'D:\\Program Files\\Mozilla Firefox\\firefox.exe'
 webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
 

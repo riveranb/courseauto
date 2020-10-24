@@ -4,7 +4,7 @@
 import os
 import pyautogui
 
-BROWSER = 'firefox'
+BROWSER = 'chrome'
 
 def locate_rectangle(picpathlist, conf=0.8):
     pyautogui.PAUSE = 1
