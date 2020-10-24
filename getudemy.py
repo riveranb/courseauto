@@ -4,6 +4,8 @@
 import os
 import pyautogui
 
+BROWSER = 'firefox'
+
 def locate_rectangle(picpathlist, conf=0.8):
     pyautogui.PAUSE = 1
 
@@ -20,12 +22,12 @@ def locate_rectangle(picpathlist, conf=0.8):
                 return registerbtn
 
 def collect_pictureseries(templatename):
-    postfixes = ['_small_cht_chrome.png', '_cht_chrome.png', '_small_chs_chrome.png', '_chs_chrome.png',
-                 '_small_cht_firefox.png', '_cht_firefox.png', '_small_chs_firefox.png', '_chs_firefox.png']
+    postext = '_' + BROWSER + '.png'
+    postfixes = ['_small_cht', '_cht', '_small_chs', '_chs']
     
     series = []
     for postf in postfixes:
-        filename = str(templatename) + postf
+        filename = str(templatename) + postf + postext
         if os.path.isfile(filename):
             series.append(filename)
     

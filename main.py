@@ -22,7 +22,7 @@ webbrowser.register('firefox', None, webbrowser.BackgroundBrowser(firefox_path))
 
 url_lines = open(urlfile, 'r').readlines()
 for url in url_lines:
-    webbrowser.get('chrome').open_new_tab(url)
+    webbrowser.get(getudemy.BROWSER).open_new_tab(url)
     # wait for browser
     time.sleep(10)
     getudemy.register_udemycourse()
