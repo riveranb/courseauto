@@ -11,6 +11,7 @@ webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
 url_lines = open('urls.txt', 'r').readlines()
 for url in url_lines:
     webbrowser.get("chrome").open_new_tab(url)
+    # wait for browser
     time.sleep(10)
     getud.register_udemycourse()
     print("Done: " + url)
